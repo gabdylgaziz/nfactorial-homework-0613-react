@@ -1,0 +1,35 @@
+.blocks{
+  display: flex;
+  flex-direction: row;
+}
+
+.block{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p{
+  position: fixed;
+  color: white;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .blocks{
+    display: flex;
+    flex-direction: column;
+  }
+  .block{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+  }
+  p{
+    color: white;
+    font-size: 50px;
+  }
+
+}
